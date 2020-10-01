@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Your Info</string>
+    <string name="welcome_to_myinfo">Enter your Details, I will tell a secret about you!!</string>
+    <string name="enter_your_age">Enter your age</string>
+    <string name="enter_your_good_name_please">Enter your good name please</string>
+    <string name="remember_details">Save my Info</string>
+    <string name="done">ProceeD</string>
+    <string name="delete_and_logout">Thank you Sharan, I am Logging off</string>
+    <string name="vl">Value</string>
+    <string name="able">able Info</string>
+    <string name="valuelabs_logo">ValueLabs Logo</string>
+    <string name="enter_your_height">Enter your Height in Meters</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="enter_your_weight">Enter your Weight in KiloGrams</string>
+    <string name="open_the_secret">Open the Secret</string>
+    <string name="your_info">Small Compliments after meeting you from Sharan Kumar</string>
+<string name="NameinSA">You have a Very Good name %s</string>
+    <string name="AgeinSA">I Can\'t believe you are %s years old!! You are looking too young yaar</string>
+    <string name="HeightinSA">coming to the height, your height is %s</string>
+    <string name="WeightinSA">coming to the weight,your weight is %s</string>
+    <string name="phinSA">if you permit me, i will save %s as MY GOOD Friend</string>
+    <string name="savedet">Saved your details buddy</string>
+    <string name="eatmore">Your BMI is %s, which is not so healthy. You should eat more for a healthy body %s </string>
+    <string name="burnmore">Your BMI is %s, which is not so healthy. You should burn more fat for a healthy body %s</string>
+<string name="healthy">Your BMI is %s, You are Perfect!! %s</string>
+    <string name="notsaved">Proceeded without saving your details</string>
+</resources>
