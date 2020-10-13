@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">User Detail</string>
+    <string name="Name">Name:</string>
+    <string name="FName">First Name:</string>
+    <string name="LName">Last Name:</string>
+    <string name="Id">User ID:</string>
+    <string name="Status">Status:</string>
+    <string name="Gender">Gender:</string>
+    <string name="Email">Email:</string>
+    <string name="deleteUser">Delete</string>
+    <string name="mainList">Users List</string>
+    <string name="Update">Updated At:</string>
+    <string name="Create">Created At:</string>
+    <string name="icon">User-Icon</string>
+    <string name="Card_header_Text">Edit the fields you require</string>
+    <string name="Submit">Submit</string>
+    <string name="detailFragment">User Details</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="hello_blank_fragment">Ceate User</string>
+    <string name="cancel">Discard</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
+    <string name="choice">(OR)</string>
+
+    <string name="Login_Name">Enter your name</string>
+    <string name="Login_pass">Enter your password</string>
+    <string name="Reg_Name">Your Name</string>
+    <string name="Reg_email">Email_Id</string>
+    <string name="Reg_pass">Password</string>
+    <string name="Reg_dob">Confirm password</string>
+    <string name="enter_the_first_name">enter the first name</string>
+    <string name="enter_last_name">enter last name</string>
+    <string name="enter_email_id">enter email id</string>
+    <string name="enter_employee_gender">enter employee gender</string>
+    <string name="enter_status">enter status</string>
+    <string name="edit_firstname">edit FirstName</string>
+    <string name="edit_last_name">edit last name</string>
+    <string name="edit_emailid">edit EmailId</string>
+    <string name="edit_gender">edit Gender</string>
+    <string name="edit_status">edit Status</string>
+</resources>

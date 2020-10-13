@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:label="@string/mainList"
+        android:name="com.example.navigation.MainFragment"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/Cardtodetail"
+            app:destination="@id/detailFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/CardtoPost"
+            app:destination="@id/postFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:label="@string/detailFragment"
+        android:name="com.example.navigation.DetailFragment"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/detailtocard"
+            app:destination="@id/mainFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="cfname"
+            app:argType="string" />
+        <argument
+            android:name="clname"
+            app:argType="string" />
+        <argument android:name="email" />
+        <argument
+            android:name="gender"
+            app:argType="string" />
+        <argument android:name="status" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.example.navigation.PostFragment"
+        android:label="@string/detailFragment"
+        tools:layout="@layout/fragment_post" >
+        <action
+            android:id="@+id/action_postFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>
