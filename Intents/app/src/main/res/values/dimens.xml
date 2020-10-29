@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_Tmargin">7dp</dimen>
+    <dimen name="LinearBoxTmargin">5dp</dimen>
+    <dimen name="EditboxTmargin">7dp</dimen>
+    <dimen name="ButtonLMargin">7dp</dimen>
+    <dimen name="textviewSize">10sp</dimen>
+    <dimen name="TV_topMargin">10dp</dimen>
+    <dimen name="EditBox_Padinf">8dp</dimen>
+</resources>

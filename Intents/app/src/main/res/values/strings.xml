@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Contact Info</string>
+    <string name="button">Add/Change image</string>
+    <string name="Email_BTn">Send via Email</string>
+    <string name="Share_Btn">Share via</string>
+    <string name="opengc">Open Google Contacts</string>
+    <string name="Name_bar">Enter your Name:</string>
+    <string name="Wish_bar">About Him/Her</string>
+    <string name="phone_number">Phone NUmber</string>
+    <string name="image">image</string>
+    <string name="enter_about_him">Enter about him</string>
+</resources>
