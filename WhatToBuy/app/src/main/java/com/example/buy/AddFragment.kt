@@ -34,8 +34,8 @@ class AddFragment : Fragment() {
                 Toast.makeText(requireContext(),"None of the fields can be empty",Toast.LENGTH_SHORT).show()
             }
             else{
-                val notes=Model(0,title,groceries,medicines, others)
-                mBuylistViewModel.addlist(notes)
+                val model=Model(0,title,groceries,medicines, others)
+                mBuylistViewModel.addlist(model)
                 Toast.makeText(requireContext(),"Note added",Toast.LENGTH_SHORT).show()
                 Navigation.findNavController(view).navigate(R.id.add_main)
             }

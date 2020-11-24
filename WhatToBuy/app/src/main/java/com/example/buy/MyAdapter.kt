@@ -11,7 +11,7 @@ import com.example.buy.model.Model
 
 class MyAdapter : RecyclerView.Adapter<MyAdapter.NoteHolder>() {
 
-    private var notesList:List<Model> = listOf()
+    private var buylist:List<Model> = listOf()
     private lateinit var view: View
     class NoteHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         var titleText: TextView =itemView.findViewById(R.id.title)
@@ -25,25 +25,24 @@ class MyAdapter : RecyclerView.Adapter<MyAdapter.NoteHolder>() {
     }
 
     override fun onBindViewHolder(holder: NoteHolder, position: Int) {
-        holder.titleText.text= notesList[position].title
-        //holder.groceries.text= notesList[position].groceries
+        holder.titleText.text= buylist[position].title
         holder.noteCard.setOnClickListener {
-            val title=notesList[position].title
-            val groceries=notesList[position].groceries
-            val medicines = notesList[position].medicines
-            val others=notesList[position].others
-            val id=notesList[position].id
+            val title=buylist[position].title
+            val groceries=buylist[position].groceries
+            val medicines = buylist[position].medicines
+            val others=buylist[position].others
+            val id=buylist[position].id
             val navigate=MainFragmentDirections.mainNote(title,id,groceries,medicines,others)
             Navigation.findNavController(view).navigate(navigate)
         }
     }
 
     override fun getItemCount(): Int {
-        return notesList.size
+        return buylist.size
     }
 
     fun setBuylist(buylist:List<Model>){
-        this.notesList=buylist
+        this.buylist=buylist
         notifyDataSetChanged()
     }
 
