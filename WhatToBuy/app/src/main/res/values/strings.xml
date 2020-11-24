@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WhatToBuy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_note">Add notes</string>
+    <string name="title_bar">Purpose of the list</string>
+    <string name="note_description">Groceries</string>
+    <string name="done">Done</string>
+    <string name="Delete">Delete Note</string>
+    <string name="update">Update</string>
+    <string name="medicines">Medicines</string>
+    <string name="other_items">Other Items</string>
+</resources>

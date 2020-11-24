@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.buy.MainFragment"
+        android:label="BuyLists"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/main_note"
+            app:destination="@id/editfragment"
+            app:enterAnim="@anim/fragment_open_enter" />
+        <action
+            android:id="@+id/main_add"
+            app:destination="@id/addFragment"
+            app:enterAnim="@anim/fragment_open_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.buy.AddFragment"
+        android:label="add new list"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/add_main"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/editfragment"
+        android:name="com.example.buy.EditFragment"
+        android:label="edit"
+        tools:layout="@layout/fragment_note">
+        <action
+            android:id="@+id/note_main"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/fragment_fade_exit" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="groceries"
+            app:argType="string" />
+        <argument
+            android:name="medicines"
+            app:argType="string" />
+        <argument
+            android:name="others"
+            app:argType="string" />
+    </fragment>
+</navigation>
