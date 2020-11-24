@@ -9,22 +9,22 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.buy.model.Model
 
-class MyAdapter : RecyclerView.Adapter<MyAdapter.NoteHolder>() {
+class MyAdapter : RecyclerView.Adapter<MyAdapter.CardHolder>() {
 
     private var buylist:List<Model> = listOf()
     private lateinit var view: View
-    class NoteHolder(itemView: View):RecyclerView.ViewHolder(itemView){
+    class CardHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         var titleText: TextView =itemView.findViewById(R.id.title)
         //var groceries: TextView = itemView.findViewById(R.id.groceries)!!
         var noteCard: CardView =itemView.findViewById(R.id.card)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardHolder {
         view = LayoutInflater.from(parent.context).inflate(R.layout.card_view, parent, false)
-        return NoteHolder(view)
+        return CardHolder(view)
     }
 
-    override fun onBindViewHolder(holder: NoteHolder, position: Int) {
+    override fun onBindViewHolder(holder: CardHolder, position: Int) {
         holder.titleText.text= buylist[position].title
         holder.noteCard.setOnClickListener {
             val title=buylist[position].title
